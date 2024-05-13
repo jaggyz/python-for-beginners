@@ -83,6 +83,75 @@ print(friends[1:]) # [ 'Karen', 'Jim', 'Oscar', 'Toby']
 friends[1] = "Mike"
 print(friends[1]) # Mike
 
+#List functions
+lucky_numbers = [4,8,15,16,23,42]
+friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
+print(friends) # ['Kevin', 'Karen', 'Jim', 'Oscar', 'Toby']
+
+friends.extend(lucky_numbers)
+print(friends) # ['Kevin', 'Karen', 'Jim', 'Oscar', 'Toby', 4, 8, 15, 16, 23, 42]
+
+friends.append("Creed")
+print(friends) # ['Kevin', 'Karen', 'Jim', 'Oscar', 'Toby', 4, 8, 15, 16, 23, 42, 'Creed']
+
+friends.insert(1,"Kelly")
+print(friends) # ['Kevin', 'Kelly', 'Karen', 'Jim', 'Oscar', 'Toby', 4, 8, 15, 16, 23, 42, 'Creed']
+
+friends.remove("Jim")
+print(friends) # ['Kevin', 'Kelly', 'Karen', 'Oscar', 'Toby', 4, 8, 15, 16, 23, 42, 'Creed']
+
+friends.pop() #remove the last
+print(friends) # ['Kevin', 'Kelly', 'Karen', 'Oscar', 'Toby', 4, 8, 15, 16, 23, 42]
+
+friends.clear()
+print(friends) # []
+
+friends = ["Kevin", "Karen", "Jim", "Jim", "Oscar", "Toby"]
+print(friends.index("Kevin")) # 0
+
+print(friends.count("Jim")) # 2
+
+friends.sort()
+print(friends) # ['Jim', 'Jim', 'Karen', 'Kevin', 'Oscar', 'Toby']
+
+lucky_numbers = [4,8,15,16,23,42]
+lucky_numbers.reverse()
+print(lucky_numbers)
+
+friends2 = friends.copy()
+print(friends2) # ['Jim', 'Jim', 'Karen', 'Kevin', 'Oscar', 'Toby']
+
+#Tuples
+coordinates = (4, 5)
+print(coordinates[0]) # 4
+
+#Functions
+def say_hi ():
+    print("Hello User")
+say_hi()
+def say_hi1(name, age):
+    print("Hello " + name + ", you are " + str(age))
+say_hi1("Mike", 45)
+say_hi1("Steve", 70)
+
+#Return Statement
+def cube(num):
+    return num*num*num
+
+result = cube(4)
+print(result) # 64
+
+#if statement
+
+
+
+
+
+
+
+
+
+
 
 
 
